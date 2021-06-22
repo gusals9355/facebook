@@ -4,7 +4,10 @@
 
 <mapper namespace="com.koreait.facebook.user.UserMapper">
     <insert id="join">
-        insert into t_user(email, pw, nm, tel)
-        values(#{email}, #{pw}, #{nm}, #{tel})
+        insert into t_user(email, pw, nm, tel, authCd)
+        values(#{email}, #{pw}, #{nm}, #{tel}, #{authCd})
     </insert>
+    <update id="upAuth">
+        update t_user set authCd = null
+    </update>
 </mapper>

@@ -27,12 +27,13 @@ public class UserController {
     @PostMapping("/join")
     public String joinP(UserEntity param){
         userService.join(param);
+
         return "redirect:/feed/home";
     }
 
-    @GetMapping("/email")
-    public String email(){
-        userService.sendEmail();
-        return "";
+    @GetMapping("/auth")
+    public void auth(UserEntity param){
+        userService.auth(param);
     }
+
 }

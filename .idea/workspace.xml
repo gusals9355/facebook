@@ -4,8 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="38ca417c-c3fb-4053-803e-1a115d559087" name="Default Changelist" comment="">
+    <list default="true" id="38ca417c-c3fb-4053-803e-1a115d559087" name="Default Changelist" comment="asda">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/koreait/facebook/user/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/koreait/facebook/user/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/koreait/facebook/user/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/koreait/facebook/user/UserMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/koreait/facebook/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/koreait/facebook/user/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/koreait/facebook/common/MySecurityUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/koreait/facebook/common/MySecurityUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/koreait/facebook/user/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/koreait/facebook/user/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/koreait/facebook/user/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/koreait/facebook/user/UserMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/koreait/facebook/user/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/koreait/facebook/user/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/koreait/facebook/FacebookApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/koreait/facebook/FacebookApplicationTests.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +37,14 @@
       </list>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="1uHUJVR0SZjccVCvoPn8JwTip4V" />
   <component name="ProjectLevelVcsManager">
@@ -52,7 +70,20 @@
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
-  <component name="RunManager" selected="JUnit.FacebookApplicationTests">
+  <component name="RunManager" selected="Spring Boot.FacebookApplication">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="FacebookApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="facebook" />
       <extension name="coverage">
@@ -115,10 +146,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.FacebookApplication" />
         <item itemvalue="JUnit.FacebookApplicationTests" />
         <item itemvalue="JUnit.FacebookApplicationTests.random1" />
         <item itemvalue="JUnit.FacebookApplicationTests.random" />
-        <item itemvalue="Spring Boot.FacebookApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -138,7 +169,7 @@
       <workItem from="1624325595570" duration="159000" />
       <workItem from="1624325770474" duration="120000" />
       <workItem from="1624325909739" duration="12112000" />
-      <workItem from="1624341623714" duration="2000" />
+      <workItem from="1624341623714" duration="1152000" />
     </task>
     <task id="LOCAL-00001" summary="asd">
       <created>1624324944753</created>
@@ -168,7 +199,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624341480772</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="asda">
+      <created>1624341650547</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1624341650547</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,7 +238,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="asd" />
-    <option name="LAST_COMMIT_MESSAGE" value="asd" />
+    <MESSAGE value="asda" />
+    <option name="LAST_COMMIT_MESSAGE" value="asda" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

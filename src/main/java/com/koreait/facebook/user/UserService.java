@@ -22,25 +22,27 @@ public class UserService {
     private HttpSession session;
 
     public int join(UserEntity param){
-        String rVal = mySecurityUtils.getRandomValue(5);
+        String rVal = mySecurityUtils.getRandomValue1(5);
         String hashPw = BCrypt.hashpw(param.getPw(), BCrypt.gensalt());
         param.setPw(hashPw);
         param.setAuthCd(rVal);
 
         int result = userMapper.join(param);
-    //ddd
         if(result == 1){
-
+            String subject = "[얼굴책] 인증메일입니다.";
+            String txt = String.format("<a href=\"http://localhost:8081/user/auth?email=%s&authCd=%s\">인증하기</a>"
+                    , param.getEmail(), rVal);
+            emailService.sendMimeMessage(param.getEmail(),subject,txt);
         }
 
         return result;
     }
 
-    public void sendEmail(){
-        String to = "gusals9355@naver.com";
-        String subject = "subject";
-        String txt = "content";
-        emailService.sendSimpleMessage(to,subject,txt);
+    public void auth(UserEntity param){
+        param.setAuthCd(null);
+        userMapper.upAuth(param);
+
     }
+
 
 }
