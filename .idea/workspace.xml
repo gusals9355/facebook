@@ -4,18 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="38ca417c-c3fb-4053-803e-1a115d559087" name="Default Changelist" comment="asda">
+    <list default="true" id="38ca417c-c3fb-4053-803e-1a115d559087" name="Default Changelist" comment="test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/koreait/facebook/user/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/koreait/facebook/user/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/koreait/facebook/user/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/koreait/facebook/user/UserMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/koreait/facebook/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/koreait/facebook/user/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/koreait/facebook/common/MySecurityUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/koreait/facebook/common/MySecurityUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/koreait/facebook/user/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/koreait/facebook/user/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/koreait/facebook/user/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/koreait/facebook/user/UserMapper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/koreait/facebook/user/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/koreait/facebook/user/UserService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/koreait/facebook/FacebookApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/koreait/facebook/FacebookApplicationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/user/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/user/login.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,7 +167,7 @@
       <workItem from="1624325595570" duration="159000" />
       <workItem from="1624325770474" duration="120000" />
       <workItem from="1624325909739" duration="12112000" />
-      <workItem from="1624341623714" duration="1152000" />
+      <workItem from="1624341623714" duration="6045000" />
     </task>
     <task id="LOCAL-00001" summary="asd">
       <created>1624324944753</created>
@@ -206,7 +204,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624341650547</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="test">
+      <created>1624343027496</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1624343027496</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,7 +244,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="asd" />
     <MESSAGE value="asda" />
-    <option name="LAST_COMMIT_MESSAGE" value="asda" />
+    <MESSAGE value="test" />
+    <option name="LAST_COMMIT_MESSAGE" value="test" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

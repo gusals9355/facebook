@@ -34,14 +34,11 @@ public class UserService {
                     , param.getEmail(), rVal);
             emailService.sendMimeMessage(param.getEmail(),subject,txt);
         }
-
         return result;
     }
 
-    public void auth(UserEntity param){
-        param.setAuthCd(null);
-        userMapper.upAuth(param);
-
+    public int auth(UserEntity param){
+        return userMapper.upAuth(param);
     }
 
 

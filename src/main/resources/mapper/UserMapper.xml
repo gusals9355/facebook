@@ -8,6 +8,6 @@
         values(#{email}, #{pw}, #{nm}, #{tel}, #{authCd})
     </insert>
     <update id="upAuth">
-        update t_user set authCd = null where email = #{email}
+        update t_user set authCd = null where email = #{email} and authCd = #{authCd}
     </update>
 </mapper>

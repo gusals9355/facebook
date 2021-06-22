@@ -4,10 +4,8 @@ import com.koreait.facebook.user.model.UserEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 @Controller
 @RequestMapping("/user")
@@ -17,7 +15,7 @@ public class UserController {
     UserService userService;
 
     @GetMapping("/login")
-    public void login(){
+    public void login(UserEntity userEntity, Model model){
 
     }
     @GetMapping("/join")
@@ -28,12 +26,13 @@ public class UserController {
     public String joinP(UserEntity param){
         userService.join(param);
 
-        return "redirect:/feed/home";
+        return "redirect:login?needEmail=1";
     }
 
     @GetMapping("/auth")
-    public void auth(UserEntity param){
-        userService.auth(param);
+    public String auth(UserEntity param){
+        int result = userService.auth(param);
+        return "redirect:login?auth="+result;
     }
 
 }
