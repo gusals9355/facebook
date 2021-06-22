@@ -28,7 +28,7 @@ spring:
     host: smtp.gmail.com
     port: 587
     username: johyeonmin841@gmail.com
-    password: SMTP용 google 계정 비밀번호
+    password: zpjvoilqpcorlnmu
     properties:
       mail:
         smtp:

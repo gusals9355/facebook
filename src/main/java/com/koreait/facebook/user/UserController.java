@@ -29,4 +29,10 @@ public class UserController {
         userService.join(param);
         return "redirect:/feed/home";
     }
+
+    @GetMapping("/email")
+    public String email(){
+        userService.sendEmail();
+        return "";
+    }
 }
