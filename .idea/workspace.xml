@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="38ca417c-c3fb-4053-803e-1a115d559087" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/koreait/facebook/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/koreait/facebook/user/UserService.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="gusals9355 &lt;gusals9355@naver.com&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1uHUJVR0SZjccVCvoPn8JwTip4V" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+  </component>
+  <component name="RunManager" selected="JUnit.FacebookApplicationTests">
+    <configuration name="FacebookApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="facebook" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.koreait.facebook.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.koreait.facebook" />
+      <option name="MAIN_CLASS_NAME" value="com.koreait.facebook.FacebookApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FacebookApplicationTests.random" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="facebook" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.koreait.facebook.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.koreait.facebook" />
+      <option name="MAIN_CLASS_NAME" value="com.koreait.facebook.FacebookApplicationTests" />
+      <option name="METHOD_NAME" value="random" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FacebookApplicationTests.random1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="facebook" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.koreait.facebook.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.koreait.facebook" />
+      <option name="MAIN_CLASS_NAME" value="com.koreait.facebook.FacebookApplicationTests" />
+      <option name="METHOD_NAME" value="random1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FacebookApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="facebook" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.koreait.facebook.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.koreait.facebook.FacebookApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.FacebookApplicationTests" />
+        <item itemvalue="JUnit.FacebookApplicationTests.random1" />
+        <item itemvalue="JUnit.FacebookApplicationTests.random" />
+        <item itemvalue="Spring Boot.FacebookApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="38ca417c-c3fb-4053-803e-1a115d559087" name="Default Changelist" comment="" />
+      <created>1624321937240</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1624321937240</updated>
+      <workItem from="1624321938531" duration="390000" />
+      <workItem from="1624322335292" duration="1751000" />
+      <workItem from="1624324497325" duration="174000" />
+      <workItem from="1624324862443" duration="219000" />
+      <workItem from="1624325102065" duration="485000" />
+      <workItem from="1624325595570" duration="159000" />
+      <workItem from="1624325770474" duration="120000" />
+      <workItem from="1624325909739" duration="12112000" />
+      <workItem from="1624341623714" duration="2000" />
+    </task>
+    <task id="LOCAL-00001" summary="asd">
+      <created>1624324944753</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1624324944753</updated>
+    </task>
+    <task id="LOCAL-00002" summary="asd">
+      <created>1624325193895</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1624325193895</updated>
+    </task>
+    <task id="LOCAL-00003" summary="asd">
+      <created>1624325998522</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1624325998522</updated>
+    </task>
+    <task id="LOCAL-00004" summary="asd">
+      <created>1624341480772</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1624341480772</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="asd" />
+    <option name="LAST_COMMIT_MESSAGE" value="asd" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

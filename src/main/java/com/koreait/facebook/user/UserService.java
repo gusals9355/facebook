@@ -28,7 +28,7 @@ public class UserService {
         param.setAuthCd(rVal);
 
         int result = userMapper.join(param);
-
+    //ddd
         if(result == 1){
 
         }
