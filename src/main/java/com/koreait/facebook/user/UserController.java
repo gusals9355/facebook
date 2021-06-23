@@ -1,10 +1,12 @@
 package com.koreait.facebook.user;
 
 import com.koreait.facebook.user.model.UserEntity;
+import org.apache.catalina.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 @Controller
@@ -18,6 +20,7 @@ public class UserController {
     public void login(UserEntity userEntity, Model model){
 
     }
+
     @GetMapping("/join")
     public void join(UserEntity userEntity){
 
@@ -33,6 +36,16 @@ public class UserController {
     public String auth(UserEntity param){
         int result = userService.auth(param);
         return "redirect:login?auth="+result;
+    }
+
+    @GetMapping("profile")
+    public void profile(){
+
+    }
+    @PostMapping("profileImg")
+    public String profileImg(MultipartFile[] files){
+
+        return "redirect:profile";
     }
 
 }

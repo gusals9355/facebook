@@ -7,4 +7,5 @@ import org.apache.ibatis.annotations.Mapper;
 public interface UserMapper {
     int join(UserEntity param);
     int upAuth(UserEntity param);
+    UserEntity selUser(UserEntity param);
 }

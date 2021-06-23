@@ -4,8 +4,8 @@ import com.koreait.facebook.common.EmailService;
 import com.koreait.facebook.common.EmailServiceImpl;
 import com.koreait.facebook.common.MySecurityUtils;
 import com.koreait.facebook.user.model.UserEntity;
-import org.mindrot.jbcrypt.BCrypt;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import javax.servlet.http.HttpSession;
@@ -15,15 +15,16 @@ public class UserService {
     @Autowired
     private MySecurityUtils mySecurityUtils;
     @Autowired
+    private PasswordEncoder passwordEncoder;
+    @Autowired
     private EmailService emailService;
     @Autowired
     private UserMapper userMapper;
-    @Autowired
-    private HttpSession session;
 
     public int join(UserEntity param){
         String rVal = mySecurityUtils.getRandomValue1(5);
-        String hashPw = BCrypt.hashpw(param.getPw(), BCrypt.gensalt());
+
+        String hashPw = passwordEncoder.encode(param.getPw());
         param.setPw(hashPw);
         param.setAuthCd(rVal);
 
@@ -40,6 +41,4 @@ public class UserService {
     public int auth(UserEntity param){
         return userMapper.upAuth(param);
     }
-
-
 }
