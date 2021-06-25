@@ -1,44 +1,88 @@
 package com.koreait.facebook.user;
 
 import com.koreait.facebook.common.EmailService;
-import com.koreait.facebook.common.EmailServiceImpl;
+import com.koreait.facebook.common.MyFileUtils;
 import com.koreait.facebook.common.MySecurityUtils;
+import com.koreait.facebook.security.IAuthenticationFacade;
 import com.koreait.facebook.user.model.UserEntity;
+import com.koreait.facebook.user.model.UserProfileEntity;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.security.core.Authentication;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
-
-import javax.servlet.http.HttpSession;
+import org.springframework.web.multipart.MultipartFile;
 
 @Service
 public class UserService {
     @Autowired
-    private MySecurityUtils mySecurityUtils;
+    private EmailService email;
+
+    @Autowired
+    private MySecurityUtils secUtils;
+
     @Autowired
     private PasswordEncoder passwordEncoder;
+
     @Autowired
-    private EmailService emailService;
+    private IAuthenticationFacade auth;
+
     @Autowired
-    private UserMapper userMapper;
+    private MyFileUtils myFileUtils;
 
-    public int join(UserEntity param){
-        String rVal = mySecurityUtils.getRandomValue1(5);
+    @Autowired
+    private UserMapper mapper;
 
-        String hashPw = passwordEncoder.encode(param.getPw());
-        param.setPw(hashPw);
-        param.setAuthCd(rVal);
+    @Autowired
+    private UserProfileMapper profileMapper;
 
-        int result = userMapper.join(param);
-        if(result == 1){
+    public int join(UserEntity param) {
+        String authCd = secUtils.getRandomDigit(5);
+
+        //비밀번호 암호화
+        String hashedPw = passwordEncoder.encode(param.getPw());
+        param.setPw(hashedPw);
+        param.setAuthCd(authCd);
+        int result = mapper.join(param);
+
+        if(result == 1) { //메일 쏘기!! (id, authcd값을 메일로 쏜다.)
             String subject = "[얼굴책] 인증메일입니다.";
-            String txt = String.format("<a href=\"http://localhost:8081/user/auth?email=%s&authCd=%s\">인증하기</a>"
-                    , param.getEmail(), rVal);
-            emailService.sendMimeMessage(param.getEmail(),subject,txt);
+            String txt = String.format("<a href=\"http://localhost:8090/user/auth?email=%s&authCd=%s\">인증하기</a>"
+                    , param.getEmail(), authCd);
+            email.sendMimeMessage(param.getEmail(), subject, txt);
         }
         return result;
     }
 
-    public int auth(UserEntity param){
-        return userMapper.upAuth(param);
+    //이메일 인증 처리
+    public int auth(UserEntity param) {
+        return mapper.auth(param);
+    }
+
+    public void profileImg(MultipartFile[] imgArr) {
+        UserEntity loginUser = auth.getLoginUser();
+        int iuser = loginUser.getIuser(); //11
+
+        System.out.println("iuser : " + iuser);
+        String target = "profile/" + iuser;
+
+        UserProfileEntity param = new UserProfileEntity();
+        param.setIuser(iuser); //11
+
+        for(MultipartFile img : imgArr) {
+            String saveFileNm = myFileUtils.transferTo(img, target); //"weioj435lknsio.jpg"
+            if(saveFileNm != null) {
+                param.setImg(saveFileNm);
+                if(profileMapper.insUserProfile(param) == 1 && loginUser.getMainProfile() == null) {
+                    UserEntity param2 = new UserEntity();
+                    param2.setIuser(iuser); //11
+                    param2.setMainProfile(saveFileNm);
+
+                    if(mapper.updUser(param2) == 1) {
+                        loginUser.setMainProfile(saveFileNm);
+                    }
+                }
+            }
+        }
     }
 }

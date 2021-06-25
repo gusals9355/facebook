@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 @RequestMapping("/feed")
 public class FeedController {
-    @GetMapping("/home")
-    public void home(){
 
-    }
+    @GetMapping("/home")
+    public void home() {}
 }
+

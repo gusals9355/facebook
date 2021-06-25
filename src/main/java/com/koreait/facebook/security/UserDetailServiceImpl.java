@@ -10,17 +10,18 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class UserDetailServiceImpl implements UserDetailsService {
+
     @Autowired
-    private UserMapper userMapper;
+    private UserMapper mapper;
 
     @Override
     public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
-        UserEntity user = new UserEntity();
-        user.setEmail(email);
-        UserEntity loginUser = userMapper.selUser(user);
-        if(loginUser == null){
-            return null;
+        UserEntity param = new UserEntity();
+        param.setEmail(email);
+        UserEntity loginUser = mapper.selUser(param);
+        if(loginUser == null) {
+            return null; //아이디가 없는 상태
         }
-        return new UserDetailImpl(loginUser); //아이디 있는상태 로그인이 되는상태는 아님
+        return new UserDetailsImpl(loginUser); //아이디는 있는 상태
     }
 }

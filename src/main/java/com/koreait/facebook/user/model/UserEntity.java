@@ -1,8 +1,10 @@
 package com.koreait.facebook.user.model;
 
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
-@Data
+@Getter
+@Setter
 public class UserEntity {
     private int iuser;
     private String email;
@@ -10,5 +12,6 @@ public class UserEntity {
     private String nm;
     private String tel;
     private String authCd;
+    private String mainProfile;
     private String regdt;
 }

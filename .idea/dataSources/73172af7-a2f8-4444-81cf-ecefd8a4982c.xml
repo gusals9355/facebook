@@ -995,58 +995,97 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <Plugin>caching_sha2_password</Plugin>
     </user>
     <table id="291" parent="3" name="t_user"/>
-    <column id="292" parent="291" name="iuser">
+    <table id="292" parent="3" name="t_user_profile"/>
+    <column id="293" parent="291" name="iuser">
       <Position>1</Position>
-      <DataType>int|0s</DataType>
+      <DataType>int unsigned|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="293" parent="291" name="email">
+    <column id="294" parent="291" name="email">
       <Position>2</Position>
       <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="294" parent="291" name="pw">
+    <column id="295" parent="291" name="pw">
       <Position>3</Position>
       <DataType>varchar(100)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="295" parent="291" name="nm">
+    <column id="296" parent="291" name="nm">
       <Position>4</Position>
       <DataType>varchar(5)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="296" parent="291" name="tel">
+    <column id="297" parent="291" name="tel">
       <Position>5</Position>
-      <DataType>varchar(13)|0s</DataType>
+      <Comment>연락처</Comment>
+      <DataType>char(13)|0s</DataType>
     </column>
-    <column id="297" parent="291" name="authcd">
+    <column id="298" parent="291" name="authCd">
       <Position>6</Position>
-      <Comment>회원가입 인증코드</Comment>
+      <Comment>회원가입 인증코드, null이면 인증받은 상태, 값이 있으면 인증해야 되는 상태</Comment>
       <DataType>char(5)|0s</DataType>
     </column>
-    <column id="298" parent="291" name="regdt">
+    <column id="299" parent="291" name="mainprofile">
       <Position>7</Position>
+      <DataType>varchar(50)|0s</DataType>
+    </column>
+    <column id="300" parent="291" name="regdt">
+      <Position>8</Position>
       <DataType>datetime|0s</DataType>
       <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
     </column>
-    <index id="299" parent="291" name="email">
+    <index id="301" parent="291" name="email">
       <ColNames>email</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <index id="300" parent="291" name="idx_auth_cd">
-      <ColNames>authcd</ColNames>
+    <index id="302" parent="291" name="idx_auth_cd">
+      <ColNames>authCd</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="301" parent="291" name="PRIMARY">
+    <key id="303" parent="291" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>iuser</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="302" parent="291" name="email">
+    <key id="304" parent="291" name="email">
       <ColNames>email</ColNames>
       <UnderlyingIndexName>email</UnderlyingIndexName>
     </key>
+    <column id="305" parent="292" name="iprofile">
+      <Position>1</Position>
+      <DataType>int unsigned|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>null</SequenceIdentity>
+    </column>
+    <column id="306" parent="292" name="iuser">
+      <Position>2</Position>
+      <DataType>int unsigned|0s</DataType>
+    </column>
+    <column id="307" parent="292" name="img">
+      <Position>3</Position>
+      <DataType>varchar(50)|0s</DataType>
+    </column>
+    <column id="308" parent="292" name="regdt">
+      <Position>4</Position>
+      <DataType>datetime|0s</DataType>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+    </column>
+    <index id="309" parent="292" name="iuser">
+      <ColNames>iuser</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="310" parent="292" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>iprofile</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="311" parent="292" name="t_user_profile_ibfk_1">
+      <ColNames>iuser</ColNames>
+      <RefTableName>t_user</RefTableName>
+      <RefColNames>iuser</RefColNames>
+    </foreign-key>
   </database-model>
 </dataSource>

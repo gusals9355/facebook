@@ -7,17 +7,14 @@
     <title layout:title-pattern="$CONTENT_TITLE">ClonFacebook</title>
     <link rel="stylesheet" th:href="@{/css/common.css}">
     <th:block layout:fragment="css"></th:block>
+    <th:block layout:fragment="js"></th:block>
 </head>
 <body>
-    <div id="container">
-        <th:block th:replace="header :: headerFragment"></th:block>
-        <main>
-            <th:block layout:fragment="content"></th:block>
-        </main>
-        <th:block th:replace="footer :: footerFragment"></th:block>
-    </div>
-
-    <script th:src="@{/js/common.js}"></script>
-    <th:block layout:fragment="script"></th:block>
+<div id="container">
+    <th:block th:replace="commonHeader :: header"></th:block>
+    <section>
+        <th:block layout:fragment="content"></th:block>
+    </section>
+</div>
 </body>
 </html>

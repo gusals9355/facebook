@@ -18,24 +18,24 @@ import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Autowired
-    private UserDetailsService userDetailsService;
+    private UserDetailsService userDetails;
 
     @Bean
-    public PasswordEncoder passwordEncoder(){
+    public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
     }
 
     @Override
-    public void configure(WebSecurity web) throws Exception{
-        web.ignoring().antMatchers("/css/**","/js/**","/img/**","favicon.ico","/resources/**","/error");
+    public void configure(WebSecurity web) throws Exception {
+        web.ignoring().antMatchers("/pic/**", "/css/**", "/js/**", "/img/**", "/error", "favicon.ico", "/resources/**");
     }
 
     @Override
-    public void configure(HttpSecurity http) throws Exception {
+    protected void configure(HttpSecurity http) throws Exception {
         http.csrf().disable();
 
         http.authorizeRequests()
-                .antMatchers("/user/login","/user/join").permitAll()
+                .antMatchers("/user/login", "/user/join", "/user/auth").permitAll()
                 .anyRequest().authenticated();
 
         http.formLogin()
@@ -44,12 +44,14 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .passwordParameter("pw")
                 .defaultSuccessUrl("/feed/home");
 
-        http.logout().logoutRequestMatcher(new AntPathRequestMatcher("/user/logout"))
+        http.logout()
+                .logoutRequestMatcher(new AntPathRequestMatcher("/user/logout"))
                 .logoutSuccessUrl("/user/login")
                 .invalidateHttpSession(true);
     }
+
     @Override
-    public void configure(AuthenticationManagerBuilder auth) throws Exception{
-        auth.userDetailsService(userDetailsService).passwordEncoder(passwordEncoder());
+    public void configure(AuthenticationManagerBuilder auth) throws Exception {
+        auth.userDetailsService(userDetails).passwordEncoder(passwordEncoder());
     }
 }

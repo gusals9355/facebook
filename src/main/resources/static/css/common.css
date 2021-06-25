@@ -1,9 +1,11 @@
 * { box-sizing: border-box; }
 html, body { margin: 0; padding: 0; }
 a { text-decoration: none; color: black; }
-ul, li { list-style: none}
+ul, ol, li { list-style: none; }
 
 header {
+    padding-left: 20px;
+    padding-right: 20px;
     z-index: 10;
     background-color: white;
     height: 80px;
@@ -23,6 +25,8 @@ nav {
 
 .header__left {
     flex: 1 0 140px;
+    display: flex;
+    align-items: center;
 }
 
 
@@ -52,3 +56,7 @@ nav {
     margin-top: 80px;
     padding: 30px;
 }
+
+.profile { border-radius: 50%; }
+.w50 { width: 50px; }
+.w200 { width: 200px; }

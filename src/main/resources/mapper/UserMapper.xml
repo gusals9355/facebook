@@ -1,16 +1,45 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
-        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.koreait.facebook.user.UserMapper">
+
     <insert id="join">
-        insert into t_user(email, pw, nm, tel, authCd)
-        values(#{email}, #{pw}, #{nm}, #{tel}, #{authCd})
+        INSERT INTO t_user
+        ( email, pw, nm, tel, authCd )
+        VALUES
+        ( #{email}, #{pw}, #{nm}, #{tel}, #{authCd} )
     </insert>
-    <update id="upAuth">
-        update t_user set authCd = null where email = #{email} and authCd = #{authCd}
-    </update>
+
     <select id="selUser" resultType="UserEntity">
-        select * from t_user where email = #{email} and authCd is null
+        SELECT * FROM t_user
+        WHERE email = #{email}
+        AND authCd IS NULL
     </select>
+
+    <update id="auth">
+        UPDATE t_user
+        SET authCd = null
+        WHERE email = #{email} AND authCd = #{authCd}
+    </update>
+
+    <update id="updUser">
+        UPDATE t_user
+        <set>
+            <if test="mainProfile != null and mainProfile != '' ">
+                mainProfile = #{mainProfile}
+            </if>
+            <if test="pw != null and pw != '' ">
+                pw = #{pw}
+            </if>
+            <if test="nm != null and nm != '' ">
+                nm = #{nm}
+            </if>
+            <if test="tel != null and tel != '' ">
+                tel = #{tel}
+            </if>
+        </set>
+        WHERE iuser = #{iuser}
+    </update>
+
+
+
 </mapper>

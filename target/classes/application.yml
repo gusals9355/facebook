@@ -1,5 +1,5 @@
 server:
-  port: 8081
+  port: 8090
 
 mybatis:
   mapper-locations: mapper/**/*.xml
@@ -23,6 +23,7 @@ spring:
     multipart:
       max-file-size: 50MB
       max-request-size: 50MB
+      location: C:/springImg
 
   mail:
     host: smtp.gmail.com

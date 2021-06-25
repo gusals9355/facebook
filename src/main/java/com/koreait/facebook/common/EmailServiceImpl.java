@@ -10,31 +10,33 @@ import javax.mail.MessagingException;
 import javax.mail.internet.MimeMessage;
 
 @Component
-public class EmailServiceImpl implements EmailService{
+public class EmailServiceImpl implements EmailService {
 
     @Autowired
-    private JavaMailSender mailSender;
+    private JavaMailSender emailSender;
 
     @Override
     public void sendSimpleMessage(String to, String subject, String text) {
         SimpleMailMessage message = new SimpleMailMessage();
-//        message.setFrom("asdasd@naver.com"); //보내는 사람 이메일
-        message.setTo(to); //받는사람 이메일 주소
+        message.setFrom("c01030249887@gmail.com");
+        message.setTo(to); //받는 사람 이메일 주소
         message.setSubject(subject); //제목
         message.setText(text); //내용
-        mailSender.send(message);
+        emailSender.send(message);
     }
+
     @Override
-    public void sendMimeMessage(String to, String subject, String text){
-        MimeMessage mimeMessage =  mailSender.createMimeMessage();
-        MimeMessageHelper helper = new MimeMessageHelper(mimeMessage, "utf-8");
-//        message.setFrom("asdasd@naver.com"); //보내는 사람 이메일
+    public void sendMimeMessage(String to, String subject, String text) {
         try {
-            helper.setTo(to); //받는사람 이메일 주소
+            MimeMessage message = emailSender.createMimeMessage();
+            MimeMessageHelper helper = new MimeMessageHelper(message, false, "UTF-8");
+//            helper.setFrom("c01030249887@gmail.com");
+            helper.setTo(to);
             helper.setSubject(subject);
-            helper.setText(text, true); // true넣을 경우 html
-            mailSender.send(mimeMessage);
-        }catch (Exception e){
+            helper.setText(text, true);
+
+            emailSender.send(message);
+        } catch (MessagingException e) {
             e.printStackTrace();
         }
     }
