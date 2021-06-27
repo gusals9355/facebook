@@ -1,5 +1,7 @@
 package com.koreait.facebook;
 
+import com.koreait.facebook.common.EmailService;
+import com.koreait.facebook.common.MySecurityUtils;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -11,4 +11,3 @@ public class FeedController {
     @GetMapping("/home")
     public void home() {}
 }
-

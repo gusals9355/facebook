@@ -14,7 +14,7 @@ spring:
 #    check-template: true
 
   datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
+    driver-class-name: org.mariadb.jdbc.Driver
     url: jdbc:mysql://localhost:3306/facebook
     username: root
     password: root
