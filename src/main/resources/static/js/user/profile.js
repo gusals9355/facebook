@@ -32,6 +32,14 @@ function changeMainProfile(iprofile) {
                     break;
                 case 1:
                     setMainProfileIcon(iprofile);
+                    //section에 있는 프로필 이미지 변경
+                    const src = profileImgElem.src;
+                    const frontScr = src.substring(0, src.lastIndexOf("/"));
+                    const resultSrc = `${frontScr}/${myJson.img}`
+                    profileImgElem.src = resultSrc;
+                    //헤더에 있는 프로필 이미지 변경
+                    const headerProfileImgElem = document.querySelector('header .span__profile img');
+                    headerProfileImgElem.src = resultSrc;
                     break;
             }
         });
@@ -61,4 +69,5 @@ profileImgElem.addEventListener('click', () => {
 //모달창 닫기
 modalCloseElem.addEventListener('click', () => {
     modalElem.classList.add('hide');
+    // location.reload();
 })
