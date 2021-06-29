@@ -4,9 +4,9 @@
 
     <insert id="join">
         INSERT INTO t_user
-        ( email, pw, nm, tel, authCd )
+        (email, pw, nm, tel, authCd)
         VALUES
-        ( #{email}, #{pw}, #{nm}, #{tel}, #{authCd} )
+        (#{email},#{pw},#{nm},#{tel},#{authCd})
     </insert>
 
     <select id="selUser" resultType="UserEntity">
@@ -44,11 +44,12 @@
         UPDATE t_user A
         INNER JOIN t_user_profile B
         ON A.iuser = B.iuser
-        AND B.iprofile = ${iprofile}
+        AND B.iprofile = #{iprofile}
         SET A.mainProfile = B.img
         WHERE A.iuser = #{iuser}
+
         <selectKey order="AFTER" resultType="String" keyColumn="mainProfile" keyProperty="img">
-            select mainProfile from t_user where iuser = #{iuser}
+            SELECT mainProfile FROM t_user WHERE iuser = #{iuser}
         </selectKey>
     </update>
 
