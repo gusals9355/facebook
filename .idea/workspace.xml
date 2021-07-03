@@ -4,37 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="38ca417c-c3fb-4053-803e-1a115d559087" name="Default Changelist" comment="0628">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis-mapper/FeedMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/feed/home.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/feed/reg.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/feed/home.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/user/profile_v2.js" afterDir="false" />
+    <list default="true" id="38ca417c-c3fb-4053-803e-1a115d559087" name="Default Changelist" comment="0629">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/koreait/facebook/common/EmailServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/koreait/facebook/common/EmailServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/koreait/facebook/common/MyConst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/koreait/facebook/common/MyConst.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/koreait/facebook/common/MyFileUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/koreait/facebook/common/MyFileUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/koreait/facebook/feed/FeedController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/koreait/facebook/feed/FeedController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/koreait/facebook/feed/FeedMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/koreait/facebook/feed/FeedMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/koreait/facebook/feed/FeedService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/koreait/facebook/feed/FeedService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/koreait/facebook/feed/model/FeedDomain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/koreait/facebook/feed/model/FeedDomain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/koreait/facebook/feed/model/FeedEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/koreait/facebook/feed/model/FeedEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/koreait/facebook/feed/model/FeedImgEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/koreait/facebook/feed/model/FeedImgEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/koreait/facebook/security/AuthenticationFacadeImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/koreait/facebook/security/AuthenticationFacadeImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/koreait/facebook/security/UserDetailsImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/koreait/facebook/security/UserDetailsImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/koreait/facebook/user/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/koreait/facebook/user/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/koreait/facebook/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/koreait/facebook/user/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/koreait/facebook/user/model/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/koreait/facebook/user/model/UserEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/FeedMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserProfileMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-mapper/UserProfileMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/feed/reg.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/feed/reg.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/user/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/user/profile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/commonHeader.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/commonHeader.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/feed/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/feed/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/feed/reg.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/feed/reg.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,17 +88,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.FacebookApplication">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="FacebookApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="facebook" />
       <extension name="coverage">
@@ -230,7 +191,9 @@
       <workItem from="1624778617383" duration="3462000" />
       <workItem from="1624840742124" duration="17630000" />
       <workItem from="1624880940763" duration="64000" />
-      <workItem from="1624967823387" duration="1103000" />
+      <workItem from="1624967823387" duration="1803000" />
+      <workItem from="1625011238700" duration="1427000" />
+      <workItem from="1625013138174" duration="2241000" />
     </task>
     <task id="LOCAL-00001" summary="asd">
       <created>1624324944753</created>
@@ -295,7 +258,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624880950444</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="0629">
+      <created>1624969711475</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1624969711475</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -331,7 +301,8 @@
     <MESSAGE value="test" />
     <MESSAGE value="0625" />
     <MESSAGE value="0628" />
-    <option name="LAST_COMMIT_MESSAGE" value="0628" />
+    <MESSAGE value="0629" />
+    <option name="LAST_COMMIT_MESSAGE" value="0629" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

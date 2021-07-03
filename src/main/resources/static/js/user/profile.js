@@ -67,3 +67,7 @@ modalCloseElem.addEventListener('click', () => {
     modalElem.classList.add('hide');
     //location.reload();
 });
+
+feedObj.url = '/user/feedList';
+feedObj.setScrollInfinity(window);
+feedObj.getFeedList(1);
