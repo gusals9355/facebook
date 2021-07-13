@@ -18,11 +18,17 @@ function getDateTimeInfo(dt) {
     return targetDt.toLocaleString();
 }
 
+//프로필 화면으로 이동
+function moveToProfile(iuser) {
+  location.href = `/user/profile?iuser=${iuser}`;
+}
+
 const feedObj = {
     limit: 5,
     itemLength: 0,
     currentPage: 1,
     url: '',
+    iuser: 0,
     swiper: null,
     containerElem: document.querySelector('#feedContainer'),
     loadingElem: document.querySelector('.loading'),
@@ -36,18 +42,21 @@ const feedObj = {
             itemContainer.classList.add('item');
 
             // 글쓴이 정보 영역
+            let imgTag = ``;
+            if(item.mainProfile != null) {
+                imgTag = `<img src="/pic/profile/${item.iuser}/${item.mainProfile}" class="pointer profile wh30" 
+                onclick="moveToProfile(${item.iuser});" onerror="this.style.display='none';">`;
+            }
             const regDtInfo = getDateTimeInfo(item.regdt);
             const topDiv = document.createElement('div');
             topDiv.classList.add('top')
             topDiv.innerHTML = `
-            <div class="itemProfileCont">
-                <img src="/pic/profile/${item.iuser}/${item.mainProfile}">
-            </div>
+            <div class="itemProfileCont">${imgTag}</div>
             <div>
-                <div>${item.writer} - ${regDtInfo}</div>
+                <div><span class="pointer" onclick="moveToProfile(${item.iuser});">${item.writer}</span> - ${regDtInfo}</div>
                 <div>${item.location == null ? '' : item.location}</div>
             </div>
-        `;
+            `;
             //이미지영역
             const imgDiv = document.createElement('div');
             imgDiv.classList.add('itemImg');
@@ -150,6 +159,11 @@ const feedObj = {
             const cmtInput = document.createElement('input');
             cmtInput.type = 'text';
             cmtInput.placeholder = '댓글을 입력하세요...';
+            cmtInput.addEventListener('keyup', (e) => {
+                if(e.key === 'Enter') {
+                    cmtBtn.click();
+                }
+            });
 
             if(item.cmt != null) { //댓글 있음
                 const cmtItemContainerDiv = this.makeCmtItem(item.cmt);
@@ -187,6 +201,15 @@ const feedObj = {
                                alert('댓글을 등록할 수 없습니다.');
                                break;
                            case 1:
+                               //댓글 추가한다.
+                               const globalConstElem = document.querySelector('#globalConst');
+
+                               const param = { ...globalConstElem.dataset };
+                               param.cmt = cmtInput.value;
+
+                               const cmtItemDiv = this.makeCmtItem(param);
+                               cmtListDiv.append(cmtItemDiv);
+
                                cmtInput.value = '';
                                break;
                        }
@@ -225,7 +248,7 @@ const feedObj = {
     getFeedList: function(page) {
         this.showLoading();
 
-        fetch(`${this.url}?page=${page}&limit=${this.limit}`)
+        fetch(`${this.url}?iuserForMyFeed=${this.iuser}&page=${page}&limit=${this.limit}`)
             .then(res => res.json())
             .then(myJson => {
                 console.log(myJson);
@@ -246,7 +269,10 @@ const feedObj = {
         cmtItemProfileDiv.className = 'cmtItemProfile';
         const cmtItemWriterProfileImg = document.createElement('img');
         cmtItemWriterProfileImg.src = `/pic/profile/${iuser}/${writerProfile}`;
-        cmtItemWriterProfileImg.className = 'profile w30';
+        cmtItemWriterProfileImg.className = 'profile wh30 pointer';
+        cmtItemWriterProfileImg.addEventListener('click', () => {
+            moveToProfile(iuser);
+        });
 
         cmtItemProfileDiv.append(cmtItemWriterProfileImg);
         cmtItemContainerDiv.append(cmtItemProfileDiv);
@@ -254,7 +280,7 @@ const feedObj = {
         //댓글
         const cmtItemCtntDiv = document.createElement('div');
         cmtItemCtntDiv.className = 'cmtItemCtnt';
-        cmtItemCtntDiv.innerHTML = `<div>${writer}</div><div>${cmt}</div>`;
+        cmtItemCtntDiv.innerHTML = `<div class="pointer" onclick="moveToProfile(${iuser});">${writer}</div><div>${cmt}</div>`;
         cmtItemContainerDiv.append(cmtItemCtntDiv);
 
         return cmtItemContainerDiv;
