@@ -4,32 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="38ca417c-c3fb-4053-803e-1a115d559087" name="Default Changelist" comment="1">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/koreait/facebook/user/model/UserDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/koreait/facebook/user/model/UserDomain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/koreait/facebook/user/model/UserFollowEntity.java" afterDir="false" />
+    <list default="true" id="38ca417c-c3fb-4053-803e-1a115d559087" name="Default Changelist" comment="0713">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/koreait/facebook/WebConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/koreait/facebook/WebConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/koreait/facebook/user/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/koreait/facebook/user/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/koreait/facebook/user/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/koreait/facebook/user/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/koreait/facebook/user/UserProfileMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/koreait/facebook/user/UserProfileMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/koreait/facebook/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/koreait/facebook/user/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/koreait/facebook/user/model/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/koreait/facebook/user/model/UserEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/koreait/facebook/user/model/UserProfileEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/koreait/facebook/user/model/UserProfileEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-mapper/UserProfileMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-mapper/UserProfileMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/common.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/feed/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/feed/home.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/feed/reg.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/feed/reg.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/user/profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/user/profile.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/feed.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/feed.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/user/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/user/profile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/user/profile_v2.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/user/profile_v2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/basicLayout.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/basicLayout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/commonHeader.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/commonHeader.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/join.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/join.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/profile.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,8 +77,11 @@
       <recent name="C:\Users\user\Desktop\LunchProject-main\facebook\src\main\resources\static" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\user\Desktop\LunchProject-main\facebook\src\main\resources\static\img" />
-      <recent name="C:\Users\user\Desktop\LunchProject-main\facebook\src\main\resources\mapper" />
+      <recent name="C:\Users\user\Desktop\LunchProject-main\facebook\src\main\java\com\koreait\facebook\common" />
+      <recent name="C:\Users\user\Desktop\LunchProject-main\facebook\src\main\java\com\koreait\facebook\feed\model" />
+      <recent name="C:\Users\user\Desktop\LunchProject-main\facebook\src\main\java\com\koreait\facebook\feed" />
+      <recent name="C:\Users\user\Desktop\LunchProject-main\facebook\src\main\java\com\koreait\facebook\security" />
+      <recent name="C:\Users\user\Desktop\LunchProject-main\facebook\src\main\java\com\koreait\facebook\user\model" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.koreait.facebook" />
@@ -111,13 +90,15 @@
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.FacebookApplication">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -229,7 +210,8 @@
       <workItem from="1625011238700" duration="1427000" />
       <workItem from="1625013138174" duration="2241000" />
       <workItem from="1625309670740" duration="161000" />
-      <workItem from="1626167248655" duration="302000" />
+      <workItem from="1626167248655" duration="355000" />
+      <workItem from="1626436948375" duration="624000" />
     </task>
     <task id="LOCAL-00001" summary="asd">
       <created>1624324944753</created>
@@ -308,7 +290,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625309788457</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="0713">
+      <created>1626167596135</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1626167596135</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -346,7 +335,8 @@
     <MESSAGE value="0628" />
     <MESSAGE value="0629" />
     <MESSAGE value="1" />
-    <option name="LAST_COMMIT_MESSAGE" value="1" />
+    <MESSAGE value="0713" />
+    <option name="LAST_COMMIT_MESSAGE" value="0713" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
