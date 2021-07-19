@@ -1,6 +1,6 @@
 server:
   port: 8090
-#dd
+
 mybatis:
   mapper-locations: mybatis-mapper/**/*.xml
   type-aliases-package: com.koreait.facebook
